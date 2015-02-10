@@ -1,0 +1,50 @@
+Using Observations to Determine the Hubble Constant
+========================================================
+author: Tom Woodrow 
+date: `r format(Sys.Date(), format = '%d %B %Y')`
+##css: custom.css
+
+Galaxies
+========================================================
+
+![alt text](expanding_universe.jpeg)
+<small>credit; http://scienceblogs.com/startswithabang/2011/01/05/q-a-how-is-the-universe-so-big/</small>
+
+***
+
+<small>There are billions of galaxies in the Universe.  Some galaxies are close enough to each other that they are gravitational attracted to each other and are moving closer.  For example our own Milky Way galaxy and the nearby (cosmologically speaking!) galaxy, Andromeda, are moving towards each other and will collide in a few billion years. However most galaxies are moving apart from each other as the universe expands.
+
+The data used in this assignment data was compiled and processed by Tully R. B. et al., 2013, AJ, 146, 86</small>
+
+
+Why are they Moving Apart?
+========================================================
+
+The further apart two galaxies are the faster they recede from each other.  This is because the space in between them is expanding. The more space between galaxies the more that space expands in a particular time period and the quicker the galaxies move apart.  An oft quoted example is to think of sultanas in a baking cake. As the cake expands sultanas further apart will move apart more quickly than closeby ones as the cake material expands between them.
+
+If we can determine how fast galaxies are moving away from us, their recession velocity, and their distance then we can work out the expansion rate.  For the Universe this expansion rate is called the Hubble Constant.
+
+
+Caculating the Hubble Constant
+========================================================
+
+There should be  a linear relationship between the recession velocity of a galaxy and its distance from us i.e. 
+
+The recession velocity is measured from the doppler shift of light coming from the galaxy and is measured in kilometres per second.  Distance is measured in Mega-parsecs i.e one million parsecs which is 31 million trillion kilometres!
+
+*Hubble Constant = Recession Velocity/Distance*
+
+
+So a galaxy 30 megaparsecs away with recession velocity of 2100 km/s will have arecession velocity of `r 2100/30`km/s/Mpc
+
+
+Therefore the slope of the linear regression line on a plot of  Recession Velocity vs Distance should approximate the value of the Hubble constant.
+
+Plotting the Data
+=======================================================
+![alt text](plot.png)
+
+
+***
+
+<small>This plot displays parameters for a random sample of 2000 galaxies from the data. A linear regression line is calculated and displayed. The interactive plot at https://tommw.shinyapps.io/Hubble/ allows the sample size to be varied by adjusting the slider.  The slope of the regression line is extracted and displayed as the Hubble Constant below the plot.  Refreshing the page creates a new random sample for the default sample size of 100 galaxies.</small>
